@@ -21,6 +21,10 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+	implementation 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate5:2.11.1'
+ 	compileOnly 'org.projectlombok:lombok:1.18.12' 
+	annotationProcessor 'org.projectlombok:lombok:1.18.12'
+
 }
 
 test {
